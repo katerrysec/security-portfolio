@@ -4,11 +4,11 @@
 The scenario is a reconstructed a five-stage OAuth consent-phishing kill chain in a live Azure tenant through forensic analysis of two linked app registrations. Logs show normal sign in traffic with no alarms.
 
 ## Environment
-Microsoft Azure
-App Registrations
-Branding & properties
-Owners
-Expose an API
+ Microsoft Azure
+ App Registrations
+ Branding & properties
+ Owners
+ Expose an API
 
 ## Investigation
 ENTRY. The user was targeted by a phishing campaign and completed multifactor authentication before their session token was stolen. Because the token carried an MFA-satisfied claim, the attacker's subsequent use of the token did not trigger Conditional Access, having an already authenticated session rather than bypassing authentication controls directly.
