@@ -1,6 +1,7 @@
-# [Title, outcome-flavored: "Investigating an Identity Attack in Entra ID"]
+# Investigating a Consent-Phishing Kill-Chain in Entra ID
 
 ## Scenario
+The scenario is a reconstructed a five-stage OAuth consent-phishing kill chain in a live Azure tenant through forensic analysis of two linked app registrations. Logs show normal sign in traffic with no alarms.
 
 ## Environment
 Microsoft Azure
