@@ -25,6 +25,8 @@ PIVOT. The attacker established a second, independent Owner relationship on the 
 
 PERSIST. Another means of persistence was established through a custom scope published on the legacy app's Expose an API blade. This means the legacy app can be referenced as a callable backend resource and the attacker can request a delegated token scoped to it, allowing for subsequent phishing campaigns.
 
+<img width="1351" height="743" alt="shot 4" src="https://github.com/user-attachments/assets/aaa15425-0d09-48d9-a5da-0abdc524e88b" />
+
 LOOT. In the final portion of the investigation, the attacker combined the rogue app's client ID, registered redirect URI, and the custom scope to construct a phishing URL designed to harvest OAuth tokens. When the user accepts the consent prompt, Entra ID issues an authorization code to the rogue app's redirect URI, OAuth2PermissionGrant, which the app's backend exchanges for a delegated access token using the standard OAuth authorization flow. The delegated token allows the attacker to act on the exposed API as the phished user without a password and bypassing MFA.
 
 <img width="647" height="841" alt="shot 8 blur" src="https://github.com/user-attachments/assets/fb978ab5-4ec1-4410-9ed7-f174e48e63bd" />
